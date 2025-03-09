@@ -3,6 +3,7 @@ export interface WorkExperience {
   company: string;
   duration: string;
   description: string;
+  skills: string[];
 }
 
 export interface Education {

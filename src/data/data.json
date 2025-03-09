@@ -1,0 +1,30 @@
+{
+    "workExperiences": [
+      {
+        "title": "Sr. Software Engineer",
+        "company": "Liberty Mutual Insurance",
+        "duration": "Jun 2022 - Jun 2024",
+        "description": "I worked within the Innovation department, contributing to their technology initiatives. Collaborated on the development of an in-house design system to streamline and unify the user interface across all Liberty Mutual platforms, enhancing consistency and user experience. Provided technical guidance and support to Liberty Mutual Inc. teams, ensuring the successful adoption and utilization of the in-house design system. Actively participated in fixing bugs in the in-house design system, promptly identifying and resolving issues to ensure a smooth user experience, contributing to its stability and reliability.",
+        "skills": ["React", "TypeScript", "Node.js", "Material-UI"]
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Freelance",
+        "duration": "Jun 2018 - Dec 2019",
+        "description": "Developed responsive websites and web applications for clients.",
+        "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+      }
+    ],
+    "educations": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "MIT",
+        "duration": "2016 - 2020"
+      },
+      {
+        "degree": "High School Diploma",
+        "institution": "Tech High School",
+        "duration": "2012 - 2016"
+      }
+    ]
+  }
