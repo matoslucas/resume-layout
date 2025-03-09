@@ -4,6 +4,7 @@ import MainMenu from './components/MainMenu';
 import ProfileSection from './components/ProfileSection';
 import ContentSection from './components/ContentSection';
 import { WorkExperience, Education } from './types/types';
+import profileImage from './assets/fifa.jpeg'
 
 // Define light and dark themes
 const lightTheme = createTheme({
@@ -98,9 +99,9 @@ const App: React.FC = () => {
       >
         <Box sx={{ flex: 1, maxWidth: { md: '30%' } }}>
           <ProfileSection
-            name="Your Name"
+            name="Lucas Matos"
             jobTitle="Software Engineer"
-            imageUrl="/path/to/your/image.jpg"
+            imageUrl={profileImage}
           />
         </Box>
         <Box sx={{ flex: 2 }}>

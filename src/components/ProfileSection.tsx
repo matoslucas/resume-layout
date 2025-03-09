@@ -12,12 +12,19 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
   jobTitle,
   imageUrl,
 }) => {
+
   return (
     <Paper sx={{ padding: 2, backgroundColor: '#252526', color: '#d4d4d4' }}>
       <Avatar
         alt={name}
         src={imageUrl}
-        sx={{ width: 100, height: 100, margin: 'auto' }}
+        sx={{
+           width: 150, 
+           height: 150, 
+           '& img': {
+            objectPosition: '0 -0.7rem;', 
+          },
+           margin: 'auto', }}
       />
       <Typography
         variant="h5"
