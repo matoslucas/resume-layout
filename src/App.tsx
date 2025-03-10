@@ -49,17 +49,7 @@ const darkTheme = createTheme({
   typography: {
     fontFamily: "Fira Code, monospace",
   },
-  components: {
-    MuiChip: {
-      styleOverrides: {
-        root: {
-         // Set the border color to purple
-          color: "#4ec9b0", // Text color matching the outline
-         
-        },
-      },
-    },
-  },
+  
 });
 
 const App: React.FC = () => {
@@ -86,8 +76,8 @@ const App: React.FC = () => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          padding: 3,
-          gap: 3,
+          padding: 2,
+          gap: 2,
           backgroundColor: "background.default",
         }}
       >

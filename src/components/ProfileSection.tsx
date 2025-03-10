@@ -5,25 +5,21 @@ import {
   Card,
   CardHeader,
   IconButton,
-  CardMedia,
   CardContent,
   CardActions,
   Collapse,
-  IconButtonProps,
   Chip,
   Box,
   Tooltip,
 } from "@mui/material";
 
-import { styled } from "@mui/material/styles";
-
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+
 import ChatIcon from "@mui/icons-material/Chat";
 
 import ExpandMoreButton from "./ExpandMoreButton";
@@ -40,7 +36,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
   jobTitle,
   imageUrl,
 }) => {
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -75,17 +71,17 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
             gap: 1,
           }}
         >
-          <Chip variant="outlined" label="JavaScript" />
-          <Chip variant="outlined" label="TypeScript" />
-          <Chip variant="outlined" label="HTML" />
-          <Chip variant="outlined" label="CSS" />
-          <Chip variant="outlined" label="Angular" />
-          <Chip variant="outlined" label="React" />
-          <Chip variant="outlined" label="Vue" />
-          <Chip variant="outlined" label="StencilJS" />
-          <Chip variant="outlined" label="Jira" />
-          <Chip variant="outlined" label="Git" />
-          <Chip variant="outlined" label="GitHub" />
+          <Chip variant="outlined" label="JavaScript" color="secondary"/>
+          <Chip variant="outlined" label="TypeScript" color="secondary"/>
+          <Chip variant="outlined" label="HTML" color="secondary"/>
+          <Chip variant="outlined" label="CSS" color="secondary"/>
+          <Chip variant="outlined" label="Angular" color="secondary"/>
+          <Chip variant="outlined" label="React" color="secondary"/>
+          <Chip variant="outlined" label="Vue" color="secondary"/>
+          <Chip variant="outlined" label="StencilJS" color="secondary" />
+          <Chip variant="outlined" label="Jira" color="secondary"/>
+          <Chip variant="outlined" label="Git" color="secondary"/>
+          <Chip variant="outlined" label="GitHub" color="secondary"/>
         </Box>
       </CardContent>
       <CardActions disableSpacing sx={{ justifyContent: "space-between" }}>
@@ -119,16 +115,6 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
           </IconButton>
         </Tooltip>
 
-        <Tooltip title="WhatsApp me">
-          <IconButton
-            aria-label="WhatsApp"
-            href="https://wa.me/17326668736?text=Hello%20there!"
-            target="self"
-          >
-            <WhatsAppIcon />
-          </IconButton>
-        </Tooltip>
-
         <Tooltip title="E-mail me">
           <IconButton
             aria-label="Email"
@@ -152,7 +138,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
             href="tel:+17326668736"
             target="self"
           >
-            <PhoneInTalkIcon />
+            <WhatsAppIcon />
           </IconButton>
         </Tooltip>
 
@@ -176,9 +162,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography variant="h6" sx={{ marginBottom: 2 }}>
-            About:
-          </Typography>
+          
           <Typography>
             Throughout my life, I've earned the endearing nickname "my little
             inventor" from my grandmother, who recognized my innate curiosity

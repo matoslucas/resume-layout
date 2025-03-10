@@ -32,18 +32,18 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
     skills,
   } = workExperience;
 
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
   return (
-    <Card>
+    <Card sx={{marginTop: 2}}>
       <CardHeader
         avatar={<Avatar />}
         title={title}
-        subheader={company + duration}
+        subheader={`${company} (${duration})`}
       />
 
       <CardContent>
