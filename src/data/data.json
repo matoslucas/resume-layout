@@ -34,10 +34,9 @@
       "title": "Sr. Frontend Developer",
       "company": "Avaya",
       "duration": "Jun 2021 - May 2022",
-      "description": "Collaborated in the development and maintenance of the in-house design system (NEO framework), based on React, to enhance the user experience and drive innovation within the organization. Actively engaged with the Design, User Experience Research, and Development team to ensure the alignment of user interface and user experience with industry best practices. Implemented A11Y standards, ensuring that applications and websites adhere to the accessibility guidelines and are usable by individuals with disabilities",
-      "challenges": "",
-      "solutions": "",
-      "contributions": "",
+      "challenges": "Build a new Avaya design system. Initially, this project began as a CSS file with custom styles, which was widely adopted across company projects. However, this solution proved impractical because it lacked HTML implementation. For example, a major challenge was creating HTML that adhered to the Web Content Accessibility Guidelines (WCAG) set by the World Wide Web Consortium (W3C). These guidelines outline best practices for color contrast, heading structures, clear link text, and the proper use of ARIA attributes to enhance screen reader functionality.<br><br> Without a structured approach, developers struggled to implement and test these accessibility requirements in their projects. This not only increased development time but also diverted focus away from working on core business logic.",
+      "solutions": "Developed a React-based UI component library that incorporates accessibility standards (A11Y). This approach enables developers to speed up the development process while ensuring compliance with accessibility guidelines.",
+      "contributions": "As a Senior Software Engineer, I designed and built several components for this UI library.",
       "skills": [
         "HTML",
         "CSS",
