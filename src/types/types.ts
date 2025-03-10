@@ -1,6 +1,7 @@
 export type WorkExperience = {
   title: string;
   company: string;
+  logo?: string;
   duration: string;
   challenges?: string;
   solutions?: string;

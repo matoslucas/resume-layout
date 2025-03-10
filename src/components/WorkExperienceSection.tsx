@@ -1,7 +1,4 @@
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
   Avatar,
   Box,
   Card,
@@ -12,11 +9,14 @@ import {
   Collapse,
   Typography,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import { WorkExperienceProps } from "../types/types";
 import { isEmpty } from "../utils/utils";
 import React from "react";
 import ExpandMoreButton from "./ExpandMoreButton";
+import lmLogo from "../assets/faviconLM.ico";
+import AvayaLogo from "../assets/faviconAvaya.png";
+import LeuchterLogo from "../assets/favicon-leuchter.png";
 
 const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
   index,
@@ -38,10 +38,31 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
     setExpanded(!expanded);
   };
 
+  const getSrcImage = (company: string) => {
+    switch (company) {
+      case "Liberty Mutual Insurance":
+        return lmLogo;
+
+      case "Avaya":
+        return AvayaLogo;
+
+      case "Leuchter IT Solutions":
+        return LeuchterLogo;
+
+      default:
+        return "";
+    }
+  };
+
   return (
-    <Card sx={{marginTop: 2}}>
+    <Card sx={{ marginTop: 2 }} key={index}>
       <CardHeader
-        avatar={<Avatar />}
+        avatar={
+          <Avatar
+            src={getSrcImage(company)}
+            sx={{ bgcolor: "#fff", width: 32, height: 32 }}
+          />
+        }
         title={title}
         subheader={`${company} (${duration})`}
       />

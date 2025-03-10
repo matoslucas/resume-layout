@@ -4,6 +4,7 @@
       "title": "Sr. Software Engineer",
       "company": "Liberty Mutual Insurance",
       "duration": "Jun 2022 - Jun 2024",
+      "logo": "./assets/lm-logo.webp",
       "challenges": "Liberty Mutual is a large company with various departments, and each department or project has implemented its own business logic and technology stack. In one project, you might find a React implementation, while another could use Angular. You could also come across Vue.js or even plain Vanilla JavaScript. <br/><br /> Over time, the look and feel (the UI implementation) have evolved, leading to inconsistencies. The challenge is that Liberty Mutual’s brand identity, including its UI, has also evolved and changed over time, creating further discrepancies.",
       "solutions": "Liberty Mutual needed a solution to manage all its brand identity in one centralized place. To achieve this, they created an in-house UI library to be used company-wide. This library was built using web component technology, which is agnostic and native, allowing it to be supported across any framework or technology, such as React, Angular, Vue, or plain JavaScript.",
       "contributions": "As a Senior Software Engineer, I designed and built several web components for this UI library. One of the components I’m most proud of is the stepper component, which has become one of the most widely used across projects.",

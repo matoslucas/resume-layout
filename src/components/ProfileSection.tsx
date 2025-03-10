@@ -27,13 +27,11 @@ import ExpandMoreButton from "./ExpandMoreButton";
 
 interface ProfileSectionProps {
   name: string;
-  jobTitle: string;
   imageUrl: string;
 }
 
 const ProfileSection: React.FC<ProfileSectionProps> = ({
   name,
-  jobTitle,
   imageUrl,
 }) => {
   const [expanded, setExpanded] = React.useState(false);
