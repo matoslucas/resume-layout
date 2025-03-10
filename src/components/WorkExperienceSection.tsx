@@ -2,13 +2,21 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Avatar,
   Box,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
   Chip,
+  Collapse,
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { WorkExperienceProps } from "../types/types";
 import { isEmpty } from "../utils/utils";
+import React from "react";
+import ExpandMoreButton from "./ExpandMoreButton";
 
 const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
   index,
@@ -24,63 +32,25 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
     skills,
   } = workExperience;
 
+  const [expanded, setExpanded] = React.useState(true);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <Accordion
-      defaultExpanded={true}
-      key={index + title}
-      sx={{ backgroundColor: "background.paper", marginBottom: 1 }}
-    >
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography variant="h6">
-          {title} @ {company}
-        </Typography>
-      </AccordionSummary>
-      <AccordionDetails>
-        <Typography variant="body2" color="text.secondary">
-          {duration}
-        </Typography>
+    <Card>
+      <CardHeader
+        avatar={<Avatar />}
+        title={title}
+        subheader={company + duration}
+      />
 
-        <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
-          Challenges:
-        </Typography>
-
-        {challenges && !isEmpty(challenges) ? (
-          <Typography
-            variant="body1"
-            sx={{ marginTop: 1 }}
-            dangerouslySetInnerHTML={{ __html: challenges }}
-          />
-        ) : null}
-
-        <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
-          Solutions:
-        </Typography>
-
-        {solutions && !isEmpty(solutions) ? (
-          <Typography
-            variant="body1"
-            sx={{ marginTop: 1 }}
-            dangerouslySetInnerHTML={{ __html: solutions }}
-          />
-        ) : null}
-
-        <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
-          Contributions:
-        </Typography>
-
-        {contributions && !isEmpty(contributions) ? (
-          <Typography
-            variant="body1"
-            sx={{ marginTop: 1 }}
-            dangerouslySetInnerHTML={{ __html: contributions }}
-          />
-        ) : null}
-
+      <CardContent>
         <Box
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            marginTop: "1rem",
             gap: 1,
           }}
         >
@@ -88,8 +58,57 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
             <Chip variant="outlined" key={index + skill} label={skill} />
           ))}
         </Box>
-      </AccordionDetails>
-    </Accordion>
+      </CardContent>
+      <CardActions sx={{ justifyContent: "flex-end" }}>
+        <ExpandMoreButton
+          label="More"
+          expand={expanded}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        />
+      </CardActions>
+
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
+            Challenges:
+          </Typography>
+
+          {challenges && !isEmpty(challenges) ? (
+            <Typography
+              variant="body1"
+              sx={{ marginTop: 1 }}
+              dangerouslySetInnerHTML={{ __html: challenges }}
+            />
+          ) : null}
+
+          <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
+            Solutions:
+          </Typography>
+
+          {solutions && !isEmpty(solutions) ? (
+            <Typography
+              variant="body1"
+              sx={{ marginTop: 1 }}
+              dangerouslySetInnerHTML={{ __html: solutions }}
+            />
+          ) : null}
+
+          <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
+            Contributions:
+          </Typography>
+
+          {contributions && !isEmpty(contributions) ? (
+            <Typography
+              variant="body1"
+              sx={{ marginTop: 1 }}
+              dangerouslySetInnerHTML={{ __html: contributions }}
+            />
+          ) : null}
+        </CardContent>
+      </Collapse>
+    </Card>
   );
 };
 export default WorkExperienceSection;

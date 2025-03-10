@@ -25,35 +25,9 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import ChatIcon from "@mui/icons-material/Chat";
+
+import ExpandMoreButton from "./ExpandMoreButton";
 //import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-
-interface ExpandMoreProps extends IconButtonProps {
-  expand: boolean;
-}
-
-const ExpandMore = styled((props: ExpandMoreProps) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme }) => ({
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-  variants: [
-    {
-      props: ({ expand }) => !expand,
-      style: {
-        transform: "rotate(0deg)",
-      },
-    },
-    {
-      props: ({ expand }) => !!expand,
-      style: {
-        transform: "rotate(180deg)",
-      },
-    },
-  ],
-}));
 
 interface ProfileSectionProps {
   name: string;
@@ -73,7 +47,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar
@@ -114,7 +88,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
           <Chip variant="outlined" label="GitHub" />
         </Box>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing sx={{ justifyContent: "space-between" }}>
         <Tooltip title="LinkedIn">
           <IconButton
             aria-label="LinkedIn"
@@ -192,14 +166,13 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
           </IconButton>
         </Tooltip>
 
-        <ExpandMore
+        <ExpandMoreButton
+          label="About"
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
+        />
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
