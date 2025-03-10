@@ -5,10 +5,10 @@ import {
   AccordionDetails,
   Typography,
   Box,
-  Chip,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ContentSectionProps } from "../types/types";
+import WorkExperienceSection from "./WorkExperienceSection";
 
 const ContentSection: React.FC<ContentSectionProps> = ({
   workExperiences,
@@ -21,40 +21,15 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         <Typography variant="h4" color="primary" sx={{ marginBottom: 2 }}>
           &lt;WorkExperience&gt;
         </Typography>
-        {workExperiences.map((exp, index) => (
-          <Accordion
-            expanded={true}
-            key={index}
-            sx={{ backgroundColor: "background.paper", marginBottom: 1 }}
-          >
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="h6">
-                {exp.title} @ {exp.company}
-              </Typography>
-             
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography variant="body2" color="text.secondary">
-                {exp.duration}
-              </Typography>
-              <Typography variant="body1" sx={{ marginTop: 1 }}>
-                {exp.description}
-              </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  marginTop:"1rem",
-                  gap: 1,
-                }}
-              >
-                {exp.skills.map((skill, index) => (
-                  <Chip variant="outlined" key={index + skill} label={skill} />
-                ))}
-              </Box>
-            </AccordionDetails>
-          </Accordion>
-        ))}
+        {workExperiences.map((exp, index) => {
+          return (
+            <WorkExperienceSection
+              index={index}
+              key={index}
+              workExperience={exp}
+            />
+          );
+        })}
       </Box>
 
       {/* Education Section */}
@@ -64,7 +39,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         </Typography>
         {educations.map((edu, index) => (
           <Accordion
-            expanded={true}
+            defaultExpanded={true}
             key={index}
             sx={{ backgroundColor: "background.paper", marginBottom: 1 }}
           >

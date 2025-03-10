@@ -1,30 +1,177 @@
 {
-    "workExperiences": [
-      {
-        "title": "Sr. Software Engineer",
-        "company": "Liberty Mutual Insurance",
-        "duration": "Jun 2022 - Jun 2024",
-        "description": "I worked within the Innovation department, contributing to their technology initiatives. Collaborated on the development of an in-house design system to streamline and unify the user interface across all Liberty Mutual platforms, enhancing consistency and user experience. Provided technical guidance and support to Liberty Mutual Inc. teams, ensuring the successful adoption and utilization of the in-house design system. Actively participated in fixing bugs in the in-house design system, promptly identifying and resolving issues to ensure a smooth user experience, contributing to its stability and reliability.",
-        "skills": ["React", "TypeScript", "Node.js", "Material-UI"]
-      },
-      {
-        "title": "Frontend Developer",
-        "company": "Freelance",
-        "duration": "Jun 2018 - Dec 2019",
-        "description": "Developed responsive websites and web applications for clients.",
-        "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"]
-      }
-    ],
-    "educations": [
-      {
-        "degree": "Bachelor of Science in Computer Science",
-        "institution": "MIT",
-        "duration": "2016 - 2020"
-      },
-      {
-        "degree": "High School Diploma",
-        "institution": "Tech High School",
-        "duration": "2012 - 2016"
-      }
-    ]
-  }
+  "workExperiences": [
+    {
+      "title": "Sr. Software Engineer",
+      "company": "Liberty Mutual Insurance",
+      "duration": "Jun 2022 - Jun 2024",
+      "challenges": "Liberty Mutual is a large company with various departments, and each department or project has implemented its own business logic and technology stack. In one project, you might find a React implementation, while another could use Angular. You could also come across Vue.js or even plain Vanilla JavaScript. <br/><br /> Over time, the look and feel (the UI implementation) have evolved, leading to inconsistencies. The challenge is that Liberty Mutual’s brand identity, including its UI, has also evolved and changed over time, creating further discrepancies.",
+      "solutions": "Liberty Mutual needed a solution to manage all its brand identity in one centralized place. To achieve this, they created an in-house UI library to be used company-wide. This library was built using web component technology, which is agnostic and native, allowing it to be supported across any framework or technology, such as React, Angular, Vue, or plain JavaScript.",
+      "contributions": "As a Senior Software Engineer, I designed and built several web components for this UI library. One of the components I’m most proud of is the stepper component, which has become one of the most widely used across projects.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "StencilJS",
+        "Vue",
+        "Angular",
+        "React",
+        "Node",
+        "Material-UI",
+        "Tailwind",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "Agile",
+        "Kanban",
+        "Web Components",
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    },
+    {
+      "title": "Sr. Frontend Developer",
+      "company": "Avaya",
+      "duration": "Jun 2021 - May 2022",
+      "description": "Collaborated in the development and maintenance of the in-house design system (NEO framework), based on React, to enhance the user experience and drive innovation within the organization. Actively engaged with the Design, User Experience Research, and Development team to ensure the alignment of user interface and user experience with industry best practices. Implemented A11Y standards, ensuring that applications and websites adhere to the accessibility guidelines and are usable by individuals with disabilities",
+      "challenges": "",
+      "solutions": "",
+      "contributions": "",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+
+        "React",
+        "Node",
+        "Material-UI",
+        "Tailwind",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "Agile",
+
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    },
+    {
+      "title": "Sr. Software Engineer",
+      "company": "Leuchter IT Solutions",
+      "duration": "Jun 2020 - May 2021",
+      "description": "Implemented responsive design standards, creating web applications that are optimized for various devices and screen sizes, to enhance the user experience. Actively contributed to the development process by implementing new features and functionalities, enhancing the overall capabilities of the web applications.",
+      "challenges": "",
+      "solutions": "",
+      "contributions": "",
+      "skills": [
+        "C#",
+        ".Net",
+        "SQL",
+        "MS-SQL-Server",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node",
+        "Material-UI",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "Agile",
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    },
+    {
+      "title": "Sr. Software Engineer",
+      "company": "Joinder",
+      "duration": "Jan 2020 - Jun 2020",
+      "description": "Actively contributed to the development process by implementing new features and functionalities, improving the capabilities and usability of the web application. Successfully integrated an Electron application into the web platform, allowing users to download, save, and upload Word documents with ease, streamlining document management and collaboration.",
+      "challenges": "",
+      "solutions": "",
+      "contributions": "",
+      "skills": [
+        "C#",
+        ".Net",
+        "Electron",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node",
+        "Material-UI",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "Agile",
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    },
+    {
+      "title": "Sr. Frontend Developer",
+      "company": "Pura",
+      "duration": "Jan 2018 - May 2019",
+      "description": "Played a key role in the enhancement of the marketplace and e-commerce website by developing and implementing new features, improving the user experience, and ensuring the platform's competitiveness in the market. Demonstrated a problem-solving mindset by actively participating in the resolution of live issues, ensuring the uninterrupted and smooth operation of the e-commerce website. Successfully integrated a payment system into the website, streamlining the checkout process and enhancing payment security, contributing to an improved user experience and increased conversions. Responsibly updated the website to accommodate new marketing campaigns, aligning it with the latest strategies and ensuring that the platform effectively promoted products and engaged customers.",
+      "challenges": "",
+      "solutions": "",
+      "contributions": "",
+      "skills": [
+        "Firebase",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node",
+        "Material-UI",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "Agile",
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    },
+    {
+      "title": "Sr. Frontend Developer",
+      "company": "Infinity ELS",
+      "duration": "Jan 2017 - Apr 2018",
+      "description": "Played a significant role in the enhancement and optimization of the Internal Admin tool to manage the customer's information and billing, focusing on improving its functionality and performance. Conducted a comprehensive code refactor, transitioning the project from jQuery to React with TypeScript, modernizing the codebase, and ensuring a more efficient and maintainable application.",
+      "challenges": "",
+      "solutions": "",
+      "contributions": "",
+      "skills": [
+        "jQuery",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node",
+        "Material-UI",
+        "GitHub",
+        "Git",
+        "UI/UX",
+        "JIRA",
+        "Product Development",
+        "Communication"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "degree": "Associate Degree in Information Systems Management, specializing in Computer Programming",
+      "institution": "Cotemig",
+      "duration": "2002 - 2005"
+    }
+  ]
+}

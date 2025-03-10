@@ -1,24 +1,31 @@
-export interface WorkExperience {
+export type WorkExperience = {
   title: string;
   company: string;
   duration: string;
-  description: string;
+  challenges?: string;
+  solutions?: string;
+  contributions?: string;
   skills: string[];
-}
+};
 
-export interface Education {
+export type Education = {
   degree: string;
   institution: string;
   duration: string;
-}
+};
 
-export interface ProfileSectionProps {
+export type ProfileSectionProps = {
   name: string;
   jobTitle: string;
   imageUrl: string;
-}
+};
 
-export interface ContentSectionProps {
+export type ContentSectionProps = {
   workExperiences: WorkExperience[];
   educations: Education[];
-}
+};
+
+export type WorkExperienceProps = {
+  index: number;
+  workExperience: WorkExperience;
+};
