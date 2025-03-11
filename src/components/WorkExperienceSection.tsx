@@ -17,6 +17,8 @@ import ExpandMoreButton from "./ExpandMoreButton";
 import lmLogo from "../assets/faviconLM.ico";
 import AvayaLogo from "../assets/faviconAvaya.png";
 import LeuchterLogo from "../assets/favicon-leuchter.png";
+import JoinderLogo from "../assets/joinder.ico";
+import PuraLogo from "../assets/faviconPura.ico";
 
 const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
   index,
@@ -48,6 +50,12 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
 
       case "Leuchter IT Solutions":
         return LeuchterLogo;
+
+      case "Joinder":
+        return JoinderLogo;
+
+      case "Pura":
+        return PuraLogo;
 
       default:
         return "";
