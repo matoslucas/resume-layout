@@ -39,7 +39,7 @@ const App: React.FC = () => {
           backgroundColor: "background.default",
         }}
       >
-        <Box sx={{ flex: 1, maxWidth: { md: "30%" } }}>
+        <Box sx={{ flex: 1, minWidth: "22rem", maxWidth: { md: "30%" } }}>
           <ProfileSection
             name="Lucas Matos"
             jobTitle="Software Engineer"

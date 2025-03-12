@@ -23,19 +23,22 @@ const MainMenu: React.FC<MainMenuProps> = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         <Tooltip title="Developer">
           <Typography variant="h4">👨🏻‍💻 </Typography>
         </Tooltip>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="h6"
+          sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+        >
           &#123; The Wise Monk &#125;
         </Typography>
 
         <Chip
           component="a"
-          href="./assets/LucasMatosResume.pdf"
+          href="./LucasMatosResume.pdf"
           clickable
-          target="_blank" 
+          target="_blank"
           deleteIcon={<PictureAsPdfIcon />}
           onClick={onClick}
           onDelete={onClick}
