@@ -11,6 +11,8 @@ import {
   Chip,
   Box,
   Tooltip,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
@@ -36,7 +38,9 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
   jobTitle,
   imageUrl,
 }) => {
-  const [expanded, setExpanded] = React.useState(false);
+  const theme = useTheme();
+  const isMdScreen = useMediaQuery(theme.breakpoints.up('md'));
+  const [expanded, setExpanded] = React.useState(isMdScreen);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
