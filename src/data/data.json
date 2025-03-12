@@ -161,6 +161,29 @@
         "Product Development",
         "Communication"
       ]
+    },
+    {
+      "title": "Tech Lead",
+      "company": "Google",
+      "duration": "Feb 2013 - Dec 2016",
+      "challenges": "By the early 2010s, as mobile usage surged, advertisers and publishers faced a critical challenge: Flash-based ads were incompatible with iPhones, iPads, and other mobile devices. This incompatibility forced the industry to shift toward HTML5 and JavaScript to ensure ads could reach audiences across all platforms.",
+      "solutions": "To address this transition, I supported digital marketing agencies in Latin America (LATAM) and North America (NAM) by assisting them in migrating their ad content from Flash to HTML5 and JavaScript. This involved working across multiple languages, including English, Portuguese, and Spanish, to ensure a smooth and effective transition for diverse teams.",
+      "contributions": "As part of this effort, I developed and launched an experimental Google Tech Ad Advertising prototype called `HTML5 Local Connect.` This innovative solution enabled two advertisements to interact with each other, showcasing the potential of HTML5 and JavaScript for creating dynamic and engaging ad experiences.",
+      "skills": [
+        "Flash",
+        "ActionScript",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Google Cloud Platform",
+        "Google Marketing Platform",
+        "Google Campaign Manager 360",
+        "Google Ad Manager",
+        "Google Web Designer",
+        "Google Ads Creative Studio",
+        "Product Development",
+        "Communication"
+      ]
     }
   ],
   "educations": [

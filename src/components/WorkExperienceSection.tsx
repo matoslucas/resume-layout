@@ -19,6 +19,8 @@ import AvayaLogo from "../assets/faviconAvaya.png";
 import LeuchterLogo from "../assets/favicon-leuchter.png";
 import JoinderLogo from "../assets/joinder.ico";
 import PuraLogo from "../assets/faviconPura.ico";
+import InfinityLogo from "../assets/infinityLogo.png";
+import GoogleLogo from "../assets/faviconGoogle.ico";
 
 const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
   index,
@@ -56,6 +58,11 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
 
       case "Pura":
         return PuraLogo;
+
+      case "Infinity ELS":
+        return InfinityLogo;
+      case "Google":
+        return GoogleLogo;
 
       default:
         return "";

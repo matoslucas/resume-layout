@@ -46,12 +46,12 @@ const App: React.FC = () => {
             imageUrl={profileImage}
           />
         </Box>
-        <Box sx={{ flex: 2 }}>
+       
           <ContentSection
             workExperiences={resumeData.workExperiences}
             educations={resumeData.educations}
           />
-        </Box>
+       
       </Box>
     </ThemeProvider>
   );
