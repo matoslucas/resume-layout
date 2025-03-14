@@ -15,7 +15,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   educations,
 }) => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+    <Box sx={{  display: "flex", flexDirection: "column", gap: 3 }}>
       {/* Work Experience Section */}
       <Box>
         <Typography variant="h4" color="primary" sx={{ marginBottom: 2 }}>

@@ -22,7 +22,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <Tooltip title="Developer">
           <Typography variant="h4">👨🏻‍💻 </Typography>

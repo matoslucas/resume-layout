@@ -39,7 +39,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
   imageUrl,
 }) => {
   const theme = useTheme();
-  const isMdScreen = useMediaQuery(theme.breakpoints.up('md'));
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   const [expanded, setExpanded] = React.useState(isMdScreen);
 
   const handleExpandClick = () => {
@@ -75,17 +75,17 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
             gap: 1,
           }}
         >
-          <Chip variant="outlined" label="JavaScript" color="secondary"/>
-          <Chip variant="outlined" label="TypeScript" color="secondary"/>
-          <Chip variant="outlined" label="HTML" color="secondary"/>
-          <Chip variant="outlined" label="CSS" color="secondary"/>
-          <Chip variant="outlined" label="Angular" color="secondary"/>
-          <Chip variant="outlined" label="React" color="secondary"/>
-          <Chip variant="outlined" label="Vue" color="secondary"/>
+          <Chip variant="outlined" label="JavaScript" color="secondary" />
+          <Chip variant="outlined" label="TypeScript" color="secondary" />
+          <Chip variant="outlined" label="HTML" color="secondary" />
+          <Chip variant="outlined" label="CSS" color="secondary" />
+          <Chip variant="outlined" label="Angular" color="secondary" />
+          <Chip variant="outlined" label="React" color="secondary" />
+          <Chip variant="outlined" label="Vue" color="secondary" />
           <Chip variant="outlined" label="StencilJS" color="secondary" />
-          <Chip variant="outlined" label="Jira" color="secondary"/>
-          <Chip variant="outlined" label="Git" color="secondary"/>
-          <Chip variant="outlined" label="GitHub" color="secondary"/>
+          <Chip variant="outlined" label="Jira" color="secondary" />
+          <Chip variant="outlined" label="Git" color="secondary" />
+          <Chip variant="outlined" label="GitHub" color="secondary" />
         </Box>
       </CardContent>
       <CardActions disableSpacing sx={{ justifyContent: "space-between" }}>
@@ -166,16 +166,11 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          
           <Typography>
-            Throughout my life, I've earned the endearing nickname "my little
-            inventor" from my grandmother, who recognized my innate curiosity
-            and creativity. From my earliest days, I've been drawn to fixing and
-            discovering things, often working with limited resources. This has
-            instilled in me a passion for problem-solving, and I've become a
-            self-taught individual who thrives on creative solutions. I bring
-            this same spirit of curiosity, resourcefulness, and creativity to my
-            professional endeavors.
+            Throughout my life, my grandmother called me her "little inventor"
+            because of my natural curiosity and creativity. Since I was young,
+            I’ve loved fixing and discovering things, often with limited
+            resources. This has fueled my passion for problem-solving.
           </Typography>
         </CardContent>
       </Collapse>
