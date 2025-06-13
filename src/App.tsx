@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
 import {
   Avatar,
   Box,
@@ -40,6 +41,10 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Helmet>
+        <title>Lucas Matos | Senior Software Engineer</title>
+        <meta name="description" content="The online resume for Lucas Matos, a Senior Software Engineer. Explore my skills, projects, and professional experience." />
+      </Helmet>
       <CssBaseline />
       <MainMenu darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Box

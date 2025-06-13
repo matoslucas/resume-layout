@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucas-matos-software-engineer.web.app/sitemap.xml
