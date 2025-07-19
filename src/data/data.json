@@ -5,9 +5,21 @@
       "company": "Liberty Mutual Insurance",
       "duration": "Jun 2022 - Jun 2024",
       "logo": "./assets/lm-logo.webp",
-      "challenges": "Liberty Mutual is a large company with various departments, and each department or project has implemented its own business logic and technology stack. In one project, you might find a React implementation, while another could use Angular. You could also come across Vue.js or even plain Vanilla JavaScript. <br/><br /> Over time, the look and feel (the UI implementation) have evolved, leading to inconsistencies. The challenge is that Liberty Mutual’s brand identity, including its UI, has also evolved and changed over time, creating further discrepancies.",
-      "solutions": "Liberty Mutual needed a solution to manage all its brand identity in one centralized place. To achieve this, they created an in-house UI library to be used company-wide. This library was built using web component technology, which is agnostic and native, allowing it to be supported across any framework or technology, such as React, Angular, Vue, or plain JavaScript.",
-      "contributions": "As a Senior Software Engineer, I designed and built several web components for this UI library. One of the components I’m most proud of is the stepper component, which has become one of the most widely used across projects.",
+      "challenges": [
+        "Inconsistent UI implementations across various departments and projects due to diverse technology stacks (React, Angular, Vue.js, Vanilla JavaScript).",
+        "Evolving brand identity and UI design over time, leading to further discrepancies in the user experience across different applications.",
+        "Lack of a centralized system to manage and maintain Liberty Mutual's brand identity and UI standards efficiently."
+      ],
+      "solutions": [
+        "Designed and developed an in-house, centralized UI library using agnostic and native web component technology (StencilJS).",
+        "Ensured broad compatibility and support across various frontend frameworks (React, Angular, Vue, and plain JavaScript) by leveraging web components.",
+        "Streamlined the UI development process, ensuring consistency in look and feel across all company-wide applications and projects."
+      ],
+      "contributions": [
+        "Designed and built multiple core web components for the company-wide UI library, ensuring reusability and adherence to brand guidelines.",
+        "Spearheaded the development of the widely adopted stepper component, which significantly improved user flows in various applications.",
+        "Contributed to establishing a more consistent and unified user experience across Liberty Mutual's diverse digital products."
+      ],
       "skills": [
         "HTML",
         "CSS",
@@ -35,15 +47,27 @@
       "title": "Sr. Frontend Developer",
       "company": "Avaya",
       "duration": "Jun 2021 - May 2022",
-      "challenges": "Build a new Avaya design system. Initially, this project began as a CSS file with custom styles, which was widely adopted across company projects. However, this solution proved impractical because it lacked HTML implementation. For example, a major challenge was creating HTML that adhered to the Web Content Accessibility Guidelines (WCAG) set by the World Wide Web Consortium (W3C). These guidelines outline best practices for color contrast, heading structures, clear link text, and the proper use of ARIA attributes to enhance screen reader functionality.<br><br> Without a structured approach, developers struggled to implement and test these accessibility requirements in their projects. This not only increased development time but also diverted focus away from working on core business logic.",
-      "solutions": "Developed a React-based UI component library that incorporates accessibility standards (A11Y). This approach enables developers to speed up the development process while ensuring compliance with accessibility guidelines.",
-      "contributions": "As a Senior Software Engineer, I designed and built several components for this UI library.",
+      "challenges": [
+        "Initial design system implemented as a basic CSS file, lacking comprehensive HTML structures and leading to inconsistent UI patterns.",
+        "Significant difficulty in adhering to Web Content Accessibility Guidelines (WCAG) due to the absence of structured HTML implementations.",
+        "Increased development time and diverted focus from core business logic as developers struggled with manual accessibility implementation and testing.",
+        "Challenges in ensuring consistent color contrast, proper heading structures, clear link text, and correct ARIA attribute usage across various projects."
+      ],
+      "solutions": [
+        "Developed a robust React-based UI component library, integrating accessibility standards (A11Y) directly into component design.",
+        "Provided developers with pre-built, accessible components, significantly accelerating the development process.",
+        "Ensured consistent compliance with WCAG guidelines across all applications, reducing the burden on individual development teams."
+      ],
+      "contributions": [
+        "Designed and built several key components for the React UI library, embedding accessibility best practices from the ground up.",
+        "Contributed to establishing a scalable and accessible design system that improved developer efficiency and product quality.",
+        "Mentored junior developers on accessibility best practices and the effective use of the new UI component library."
+      ],
       "skills": [
         "HTML",
         "CSS",
         "JavaScript",
         "TypeScript",
-
         "React",
         "Node",
         "Material-UI",
@@ -52,7 +76,6 @@
         "Git",
         "UI/UX",
         "Agile",
-
         "JIRA",
         "Product Development",
         "Communication"
@@ -62,9 +85,22 @@
       "title": "Sr. Frontend Developer",
       "company": "Leuchter IT Solutions",
       "duration": "Jun 2020 - May 2021",
-      "challenges": "At Leuchter, the project focused on developing a real estate and financing website for Swiss citizens. The platform aimed to provide a loan financing calculator to help users estimate the costs of purchasing a house.<br><br> To get a loan approved, the system required users to complete a detailed application form and upload several documents for review by the financial institution. Additionally, users needed to provide the zip code of the canton where the desired property was located.",
-      "solutions": "The team implemented the project using Material UI for the front end, combined with C# .NET and MSSQL for the back end. The website was fully responsive, ensuring seamless compatibility across various screen sizes and device resolutions. To accommodate Switzerland's multilingual population, the website supported four languages: English, German, Italian, and French.",
-      "contributions": "I was responsible for adding new features to the project, developing the financial calculator based on design specifications, and integrating a Swiss API to retrieve zip codes based on the selected address.",
+      "challenges": [
+        "Developing a comprehensive real estate and financing website for Swiss citizens, requiring complex loan financing calculations.",
+        "Implementing a detailed application form for loan approvals, necessitating document uploads and secure data handling.",
+        "Integrating a reliable system to retrieve zip codes based on specific cantons and property addresses in Switzerland.",
+        "Ensuring the website was fully responsive and adaptable to various screen sizes and device resolutions."
+      ],
+      "solutions": [
+        "Implemented the frontend using Material UI, coupled with a C# .NET and MSSQL backend for robust data management.",
+        "Ensured full responsiveness across various screen sizes and device resolutions to provide a seamless user experience.",
+        "Integrated multi-language support (English, German, Italian, and French) to cater to Switzerland's diverse linguistic population."
+      ],
+      "contributions": [
+        "Developed new features for the platform, enhancing user engagement and functionality.",
+        "Designed and implemented the financial calculator based on detailed design specifications, providing accurate loan estimates.",
+        "Integrated a Swiss API for real-time zip code retrieval, improving the accuracy and efficiency of property searches."
+      ],
       "skills": [
         "C#",
         ".Net",
@@ -90,9 +126,21 @@
       "title": "Sr. Software Engineer",
       "company": "Joinder",
       "duration": "Jan 2020 - Jun 2020",
-      "challenges": "At Orrick, a law firm needed a new way to manage their legal documents, a solution that didn’t yet exist in the market. To address this, they developed Joinder, a custom cloud-based system designed specifically for managing legal documents.",
-      "solutions": "The Joinder team developed a software application using Electron (cross-platform desktop applications), combined with Material UI for the frontend design and C# .NET for the backend infrastructure.",
-      "contributions": "One key requirement was to enable automatic document saving while editing, eliminating the need for users to manually click the save button. Leveraging Electron’s file system privileges, I implemented a feature that detected changes in the document and automatically uploaded the updated version to the cloud without interrupting the user.",
+      "challenges": [
+        "Developing a novel, custom cloud-based system for legal document management for the law firm Orrick, a solution not yet available in the market.",
+        "Implementing a seamless and automatic document saving feature to eliminate the need for manual saves by users.",
+        "Ensuring data integrity and cloud synchronization while handling real-time document edits."
+      ],
+      "solutions": [
+        "Developed a cross-platform desktop application using Electron, providing a native-like user experience.",
+        "Utilized Material UI for the frontend design, ensuring a modern and intuitive user interface.",
+        "Leveraged C# .NET for the backend infrastructure, providing a robust and secure foundation for document management."
+      ],
+      "contributions": [
+        "Implemented an innovative automatic document saving feature by leveraging Electron's file system privileges.",
+        "Designed and developed a mechanism to detect real-time document changes and automatically upload updated versions to the cloud, significantly enhancing user workflow and data security.",
+        "Contributed to the overall architecture and implementation of the Joinder application, ensuring its stability and performance."
+      ],
       "skills": [
         "C#",
         ".Net",
@@ -117,9 +165,21 @@
       "title": "Sr. Frontend Developer",
       "company": "Pura",
       "duration": "Jan 2018 - May 2019",
-      "challenges": "During my time at Pura, a startup that graduated from the UVU Startup Accelerator program, I encountered several challenges common to early-stage companies.",
-      "solutions": "To establish their online presence, they built their e-commerce website using Shopify. For additional functionality and scalability, they leveraged React and Material-UI for the frontend, along with Firebase (part of the Google for Startups program) for backend services.",
-      "contributions": "I played a key role in modifying their subscription model. Initially, the first checkout required customers to purchase a device along with two fragrances. Subsequent charges were supposed to be for the subscription program, which included two fragrances per month. However, the system had an issue where the device was being incorrectly included in recurring subscription charges. My contribution involved fixing this issue to ensure the device was only charged once during the initial purchase, while subsequent charges were solely for the subscription program (a minimum of two fragrances per month).<br><br> Additionally, they were facing another issue with the shopping cart on mobile devices. Users could rearrange the fragrance list order using a drag-and-drop interface, but the user actions were often faster than the server's response time. This mismatch created inconsistencies between the order displayed to the user and the order saved on the server. To resolve this, I implemented an Optimistic UI approach. This ensured that the frontend immediately reflected the user's changes while the server processed the updates in the background, significantly improving the user experience.",
+      "challenges": [
+        "Addressing common challenges faced by an early-stage startup, including rapidly scaling e-commerce functionality.",
+        "Correcting a critical bug in the subscription model where the device was being incorrectly included in recurring subscription charges instead of only the initial purchase.",
+        "Resolving inconsistencies in the mobile shopping cart's drag-and-drop functionality, where user actions outpaced server responses, leading to misaligned order displays."
+      ],
+      "solutions": [
+        "Built the core e-commerce website using Shopify for initial online presence and sales.",
+        "Leveraged React and Material-UI for enhanced frontend functionality and scalability.",
+        "Utilized Firebase (as part of Google for Startups) for robust backend services, ensuring efficient data management and real-time updates."
+      ],
+      "contributions": [
+        "Successfully fixed a critical bug in the subscription model, ensuring devices were charged only once at initial purchase, optimizing recurring revenue for fragrances.",
+        "Implemented an **Optimistic UI** approach for the mobile shopping cart, providing immediate visual feedback to users and significantly improving the drag-and-drop experience by synchronizing client-side actions with server updates.",
+        "Played a key role in developing and optimizing the e-commerce platform, contributing to Pura's growth as a startup."
+      ],
       "skills": [
         "Firebase",
         "HTML",
@@ -142,9 +202,21 @@
       "title": "Sr. Frontend Developer",
       "company": "Infinity ELS",
       "duration": "Jan 2017 - Apr 2018",
-      "challenges": "They were modernizing their tech stack by building a new UI for their internal tool, which was used to manage customer information and billing details.",
-      "solutions": "The solution involved migrating from jQuery to React with Material UI for a more modern and maintainable frontend.",
-      "contributions": "Initially, they had mixed jQuery with React, which was a poor practice. This mistake occurred because a junior developer was tasked with the implementation. The combination of both frameworks led to inconsistencies in DOM manipulation, creating issues in the project.<br><br>To resolve this, I first modified the jQuery library to address the immediate problems. Later, I led the effort to remove all jQuery implementations entirely and fully migrate the project to React, ensuring a cleaner and more efficient codebase.",
+      "challenges": [
+        "Modernizing an outdated internal tool used for customer information and billing management.",
+        "Addressing issues caused by a mixed jQuery and React codebase, which led to DOM manipulation inconsistencies and project instability.",
+        "Leading the complete migration from a legacy jQuery implementation to a modern React-based frontend."
+      ],
+      "solutions": [
+        "Initiated and led the migration from jQuery to React with Material UI, establishing a more modern and maintainable frontend architecture.",
+        "Addressed immediate problems by modifying existing jQuery code to stabilize the application while planning the full migration.",
+        "Successfully transitioned the entire project to a pure React codebase, eliminating inconsistencies and improving overall efficiency."
+      ],
+      "contributions": [
+        "Identified and addressed critical DOM manipulation inconsistencies arising from the mixed jQuery and React codebase.",
+        "Led the strategic decision and execution to fully remove all jQuery implementations, resulting in a cleaner and more efficient codebase.",
+        "Mentored team members on React best practices, contributing to a more skilled and cohesive development team."
+      ],
       "skills": [
         "jQuery",
         "HTML",
@@ -166,9 +238,21 @@
       "title": "Tech Lead",
       "company": "Google",
       "duration": "Feb 2013 - Dec 2016",
-      "challenges": "By the early 2010s, as mobile usage surged, advertisers and publishers faced a critical challenge: Flash-based ads were incompatible with iPhones, iPads, and other mobile devices. This incompatibility forced the industry to shift toward HTML5 and JavaScript to ensure ads could reach audiences across all platforms.",
-      "solutions": "To address this transition, I supported digital marketing agencies in Latin America (LATAM) and North America (NAM) by assisting them in migrating their ad content from Flash to HTML5 and JavaScript. This involved working across multiple languages, including English, Portuguese, and Spanish, to ensure a smooth and effective transition for diverse teams.",
-      "contributions": "As part of this effort, I developed and launched an experimental Google Tech Ad Advertising prototype called `HTML5 Local Connect.` This innovative solution enabled two advertisements to interact with each other, showcasing the potential of HTML5 and JavaScript for creating dynamic and engaging ad experiences.",
+      "challenges": [
+        "Addressing the critical challenge of Flash-based ads being incompatible with mobile devices (iPhones, iPads) in the early 2010s, as mobile usage surged.",
+        "Facilitating the industry-wide shift from Flash to HTML5 and JavaScript to ensure broad ad reach across all platforms.",
+        "Providing comprehensive technical support and migration assistance to digital marketing agencies across diverse linguistic regions (LATAM and NAM)."
+      ],
+      "solutions": [
+        "Supported digital marketing agencies in Latin America (LATAM) and North America (NAM) in migrating their ad content from Flash to HTML5 and JavaScript.",
+        "Provided multi-language support (English, Portuguese, and Spanish) to ensure a smooth and effective transition for diverse teams.",
+        "Developed and launched an experimental Google Tech Ad Advertising prototype, demonstrating innovative ad capabilities."
+      ],
+      "contributions": [
+        "Developed and launched `HTML5 Local Connect`, an experimental Google Tech Ad Advertising prototype that enabled two advertisements to interact dynamically.",
+        "Showcased the potential of HTML5 and JavaScript for creating engaging and interactive ad experiences.",
+        "Played a pivotal role in accelerating the adoption of modern web technologies for advertising, impacting a large number of digital marketing campaigns."
+      ],
       "skills": [
         "Flash",
         "ActionScript",
@@ -184,6 +268,232 @@
         "Product Development",
         "Communication"
       ]
+    },
+    {
+      "title": "Sr. Flex Developer",
+      "company": "ProKarma",
+      "duration": "Jun 2011 - Sep 2012",
+      "challenges": [
+        "Leading the adoption and effective use of the Adobe Flex framework within development projects.",
+        "Conducting extensive code refactoring to transition legacy Adobe Flash ActionScript 3.0 codebases to Adobe Flex 4.0, aiming for improved efficiency and maintainability."
+      ],
+      "solutions": [
+        "Successfully guided teams in implementing Adobe Flex for new projects and modernizing existing applications.",
+        "Streamlined development workflows by introducing best practices for Flex development.",
+        "Improved codebase quality and long-term maintainability through strategic refactoring initiatives."
+      ],
+      "contributions": [
+        "Played a pivotal role in leading the successful adoption and implementation of the Adobe Flex framework across projects.",
+        "Orchestrated and executed extensive code refactoring, transitioning substantial portions of the codebase from Adobe Flash ActionScript 3.0 to Adobe Flex 4.0, resulting in enhanced efficiency and maintainability.",
+        "Contributed to establishing best practices for Flex development within the team, improving overall project quality and developer productivity."
+      ],
+      "skills": [
+        "Software as a Service (SaaS)",
+        "Attention to Detail",
+        "REST APIs",
+        "User Interface Design",
+        "ActionScript",
+        "HTML",
+        "Flex",
+        "JavaScript",
+        "Web Applications",
+        "Adobe Creative Suite",
+        "Problem Solving",
+        "UIX",
+        "Complex Systems",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Sr.Flash / AS3 Developer",
+      "company": "ProKarma",
+      "duration": "Sep 2011 - Jul 2012",
+      "challenges": [
+        "Seamlessly embedding the casino-style slot machine game 'House of Fun' (later acquired by Playtika) onto the Facebook platform.",
+        "Implementing robust social sharing functionalities to encourage player engagement and virality on Facebook.",
+        "Developing a reliable system for saving and displaying player scores and rankings among friends on Facebook.",
+        "Effectively utilizing Facebook's marketing tools to promote the game and acquire new players within the platform."
+      ],
+      "solutions": [
+        "Leveraged the Facebook API extensively to embed the game directly on Facebook, ensuring a seamless user experience.",
+        "Developed features that tapped into Facebook's social network, facilitating easy sharing, friend invitations, and score comparisons.",
+        "Created a robust system for saving player data and displaying friend rankings using the Facebook API.",
+        "Integrated Facebook's marketing APIs to execute targeted ads and promotions directly within the platform, optimizing user acquisition."
+      ],
+      "contributions": [
+        "Developed and integrated key features using the Facebook API, specifically embedding the game to ensure optimal performance on the platform.",
+        "Played a significant role in creating and optimizing social sharing tools, enabling players to invite friends and showcase achievements effortlessly.",
+        "Designed and set up the system for accurately saving player scores and rankings, ensuring visibility among friends and enhancing competitive play.",
+        "Assisted in integrating Facebook's marketing APIs to support successful game promotions and user acquisition strategies."
+      ],
+      "skills": [
+        "Software as a Service (SaaS)",
+        "Attention to Detail",
+        "REST APIs",
+        "User Interface Design",
+        "Web Applications",
+        "Adobe Creative Suite",
+        "Problem Solving",
+        "UIX",
+        "Complex Systems",
+        "Agile Development"
+      ]
+    },
+    {
+      "title": "Technical Lead | Scrum Master",
+      "company": "Creata",
+      "duration": "Aug 2010 - May 2011",
+      "challenges": [
+        "Leading web development projects for McDonald's websites, focusing on enhancing their online presence and customer experience.",
+        "Overseeing the implementation of McDonald's websites in Latin America, expanding the brand's digital footprint into new markets.",
+        "Integrating new features, such as a restaurant locator with the Google Maps API, to improve user accessibility and provide valuable customer tools."
+      ],
+      "solutions": [
+        "Implemented Agile Scrum methodologies to manage and deliver web development projects efficiently.",
+        "Successfully expanded McDonald's digital presence by launching localized websites across Latin America.",
+        "Integrated advanced functionalities like the Google Maps API for enhanced user interaction and utility."
+      ],
+      "contributions": [
+        "Contributed significantly to web development projects for McDonald's websites, playing a pivotal role in creating and maintaining digital solutions that enhanced online presence and customer experience.",
+        "Led the successful implementation of McDonald's websites in Latin America, effectively expanding the brand's digital footprint into new markets.",
+        "Successfully integrated new features, including a sophisticated restaurant locator powered by the Google Maps API, which significantly enhanced user accessibility and provided a valuable tool for customers seeking nearby locations."
+      ],
+      "skills": [
+        "Agile Software Development",
+        "Attention to Detail",
+        "REST APIs",
+        "User Interface Design",
+        "XML",
+        "HTML5",
+        "SQL",
+        "ActionScript",
+        "HTML",
+        "JavaScript",
+        "Web Applications",
+        "Adobe Creative Suite",
+        "Google Maps",
+        "Leadership",
+        "Problem Solving",
+        "Agile Environment",
+        "Complex Systems",
+        "CSS3",
+        "Adobe Flash",
+        "Agile Development",
+        "CSS"
+      ]
+    },
+    {
+      "title": "WAP R&D PHP Senior Developer",
+      "company": "Gameloft",
+      "duration": "Jul 2008 - Sep 2010",
+      "challenges": [
+        "Collaborating within the Research & Development team to build templates and research new functionalities within the WAP framework.",
+        "Providing support and guidance to the production team for effective implementation of new innovations.",
+        "Extensive development and support for promotional microsites for major mobile operators in the LATAM market (Movistar, Claro, Tigo, Personal, OI, TIM, etc.).",
+        "Ensuring mobile-first design and compatibility across various WAP-enabled devices."
+      ],
+      "solutions": [
+        "Developed robust WAP templates and conducted R&D for new features, ensuring cutting-edge mobile content delivery.",
+        "Provided critical technical support to the production team, facilitating seamless integration of new functionalities.",
+        "Built and maintained numerous promotional microsites, effectively expanding market outreach and customer engagement for mobile operators."
+      ],
+      "contributions": [
+        "Collaborated within the Research & Development team, playing a key role in building foundational templates and conducting extensive research to explore and implement new functionalities within the WAP framework.",
+        "Provided invaluable support and guidance to the production team in applying these innovations effectively, ensuring smooth deployment of new features.",
+        "Provided extensive development and support for promotional microsites tailored for mobile operators in the LATAM market, including major players like Movistar, Claro, Tigo (America Movil), Personal, OI, TIM, and more. This role involved creating and maintaining dynamic web-based platforms to promote mobile services, significantly contributing to market outreach and customer engagement strategies."
+      ],
+      "skills": [
+        "PHP",
+        "Attention to Detail",
+        "MySQL",
+        "Mobile Application Development",
+        "REST APIs",
+        "SQL",
+        "ActionScript",
+        "HTML",
+        "JavaScript",
+        "Web Applications",
+        "Vanilla JavaScript",
+        "Responsive Web Design",
+        "Problem Solving",
+        "Complex Systems",
+        "Continuous Integration (CI)",
+        "Application Programming Interfaces (API)",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Actionscript 3.0 Developer",
+      "company": "Gameloft",
+      "duration": "Jan 2007 - Jul 2008",
+      "challenges": [
+        "Supporting the integration of casual games published on Facebook, requiring robust communication protocols.",
+        "Analyzing and developing the communication protocol (XML, JSON, AMFPHP) between the game framework and the Facebook API.",
+        "Ensuring seamless functionality and data exchange between game applications and the Facebook platform."
+      ],
+      "solutions": [
+        "Developed and optimized communication protocols (XML, JSON, AMFPHP) to ensure seamless integration between games and the Facebook API.",
+        "Provided critical support for the successful publication and functionality of casual games on the Facebook platform."
+      ],
+      "contributions": [
+        "Assisted in the support and integration of various casual games successfully published on Facebook.",
+        "Analyzed and developed sophisticated communication protocols (XML, JSON, AMFPHP) to ensure seamless data exchange and functionality between the core game framework and the Facebook API.",
+        "Contributed to the overall stability and performance of games operating within the Facebook ecosystem."
+      ],
+      "skills": [
+        "PHP",
+        "Attention to Detail",
+        "MySQL",
+        "REST APIs",
+        "User Interface Design",
+        "SQL",
+        "ActionScript",
+        "HTML",
+        "JavaScript",
+        "Web Applications",
+        "Adobe Creative Suite",
+        "Problem Solving",
+        "UIX",
+        "Complex Systems",
+        "Continuous Integration (CI)",
+        "CSS"
+      ]
+    },
+    {
+      "title": "IHTML jr. Web Developer",
+      "company": "Brightstar Corp.",
+      "duration": "Feb 2005 - Feb 2006",
+      "challenges": [
+        "Building complex e-commerce websites with a primary focus on Business-to-Business (B2B) platforms.",
+        "Creating and maintaining secure, private channels for resellers to facilitate product commercialization.",
+        "Ensuring robust functionality for ordering, inventory management, and secure transactions within the B2B framework."
+      ],
+      "solutions": [
+        "Developed robust B2B e-commerce platforms to support Brightstar Corp.'s digital commerce initiatives.",
+        "Implemented secure private channels for resellers, streamlining product commercialization processes.",
+        "Ensured effective functionality for complex ordering and inventory management within the B2B ecosystem."
+      ],
+      "contributions": [
+        "Built comprehensive e-commerce websites, with a primary focus on Business-to-Business (B2B) platforms, significantly contributing to the online presence and digital commerce of the organization.",
+        "Created and diligently maintained private channels for resellers, effectively facilitating seamless interactions and enabling them to efficiently commercialize products from Brightstar Corp. directly through the platform."
+      ],
+      "skills": [
+        "Software as a Service (SaaS)",
+        "Attention to Detail",
+        "DHTML",
+        "ihtml",
+        "REST APIs",
+        "SQL",
+        "HTML",
+        "JavaScript",
+        "Web Applications",
+        "Vanilla JavaScript",
+        "Problem Solving",
+        "Complex Systems",
+        "CSS3",
+        "Business-to-Business (B2B)",
+        "Application Programming Interfaces (API)"
+      ]
     }
   ],
   "educations": [
@@ -191,6 +501,16 @@
       "degree": "Associate Degree in Information Systems Management, specializing in Computer Programming",
       "institution": "Cotemig",
       "duration": "2002 - 2005"
+    },
+    {
+      "degree": "HTML5, Tecnología de la información",
+      "institution": "ITMaster",
+      "duration": "2013 - 2013"
+    },
+    {
+      "degree": "Eng. Software, Incomplete Degree",
+      "institution": "Centro Universitário UNA",
+      "duration": "2004 - 2005"
     }
   ]
 }

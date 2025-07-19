@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 
 import { WorkExperienceProps } from "../types/types";
-import { isEmpty } from "../utils/utils";
 import React from "react";
 import ExpandMoreButton from "./ExpandMoreButton";
 import lmLogo from "../assets/faviconLM.ico";
@@ -110,38 +109,50 @@ const WorkExperienceSection: React.FC<WorkExperienceProps> = ({
           <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
             Challenges:
           </Typography>
-
-          {challenges && !isEmpty(challenges) ? (
-            <Typography
-              variant="body1"
-              sx={{ marginTop: 1 }}
-              dangerouslySetInnerHTML={{ __html: challenges }}
-            />
-          ) : null}
+          <ul>
+            {challenges && challenges.length > 0
+              ? challenges.map((challenge: string, index: number) => (
+                <li><Typography
+                  key={index}
+                  variant="body1"
+                  sx={{ marginTop: 1 }}
+                  dangerouslySetInnerHTML={{ __html: challenge }}
+                /></li>
+              ))
+              : null}
+          </ul>
 
           <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
             Solutions:
           </Typography>
-
-          {solutions && !isEmpty(solutions) ? (
-            <Typography
-              variant="body1"
-              sx={{ marginTop: 1 }}
-              dangerouslySetInnerHTML={{ __html: solutions }}
-            />
-          ) : null}
+          <ul>
+          {solutions && solutions.length > 0
+            ? solutions.map((solution: string, index) => (
+              <li><Typography
+                key={index}
+                variant="body1"
+                sx={{ marginTop: 1 }}
+                dangerouslySetInnerHTML={{ __html: solution }}
+              /></li>
+            ))
+            : null}
+          </ul>
 
           <Typography variant="body2" color={"primary"} sx={{ marginTop: 1 }}>
             Contributions:
           </Typography>
-
-          {contributions && !isEmpty(contributions) ? (
-            <Typography
-              variant="body1"
-              sx={{ marginTop: 1 }}
-              dangerouslySetInnerHTML={{ __html: contributions }}
-            />
-          ) : null}
+          <ul>
+          {contributions && contributions.length > 0
+            ? contributions.map((contribution, index) => (
+              <li><Typography
+                key={index}
+                variant="body1"
+                sx={{ marginTop: 1 }}
+                dangerouslySetInnerHTML={{ __html: contribution }}
+              /></li>
+            ))
+            : null}
+          </ul>
         </CardContent>
       </Collapse>
     </Card>

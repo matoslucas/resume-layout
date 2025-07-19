@@ -3,9 +3,9 @@ export type WorkExperience = {
   company: string;
   logo?: string;
   duration: string;
-  challenges?: string;
-  solutions?: string;
-  contributions?: string;
+  challenges?: string[];
+  solutions?: string[];
+  contributions?: string[];
   skills: string[];
 };
 
