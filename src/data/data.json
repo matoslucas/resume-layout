@@ -344,19 +344,24 @@
       "company": "Creata",
       "duration": "Aug 2010 - May 2011",
       "challenges": [
-        "Leading web development projects for McDonald's websites, focusing on enhancing their online presence and customer experience.",
-        "Overseeing the implementation of McDonald's websites in Latin America, expanding the brand's digital footprint into new markets.",
-        "Integrating new features, such as a restaurant locator with the Google Maps API, to improve user accessibility and provide valuable customer tools."
+        "Maintaining legacy Flash websites while simultaneously rebuilding them in modern HTML5.",
+        "Ensuring consistent application of a new red-to-white brand redesign across multiple country-specific websites.",
+        "Developing an accurate and mobile-friendly restaurant locator for all of Latin America.",
+        "Adapting content to support multiple languages and local cultures, going beyond simple translation."
       ],
       "solutions": [
-        "Implemented Agile Scrum methodologies to manage and deliver web development projects efficiently.",
-        "Successfully expanded McDonald's digital presence by launching localized websites across Latin America.",
-        "Integrated advanced functionalities like the Google Maps API for enhanced user interaction and utility."
+        "Executed a phased migration strategy, keeping Flash sites operational while incrementally rolling out HTML5 versions.",
+        "Built a unified design system with shared components to ensure brand consistency while allowing for regional flexibility.",
+        "Integrated the Google Maps API to create a reliable and responsive restaurant locator.",
+        "Implemented a robust localization framework (i18n & l10n) using a centralized CMS to manage multilingual content."
       ],
       "contributions": [
-        "Contributed significantly to web development projects for McDonald's websites, playing a pivotal role in creating and maintaining digital solutions that enhanced online presence and customer experience.",
-        "Led the successful implementation of McDonald's websites in Latin America, effectively expanding the brand's digital footprint into new markets.",
-        "Successfully integrated new features, including a sophisticated restaurant locator powered by the Google Maps API, which significantly enhanced user accessibility and provided a valuable tool for customers seeking nearby locations."
+        "Led an Agile team of 5 developers as Scrum Master and Lead Developer, facilitating all sprint ceremonies.",
+        "Oversaw the end-to-end implementation of McDonald’s websites across Latin America.",
+        "Developed and integrated a Google Maps–powered restaurant locator from the ground up.",
+        "Maintained critical Flash-based legacy websites throughout the migration process to ensure business continuity.",
+        "Built and applied new front-end components aligned with the updated brand design.",
+        "Engineered the multilingual support system for seamless language switching and localized content delivery."
       ],
       "skills": [
         "Agile Software Development",
